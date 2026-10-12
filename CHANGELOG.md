@@ -6,6 +6,22 @@
 
 ---
 
+## [Unreleased]
+
+### Нэмэгдсэн
+- **Community-health файлууд**: `CONTRIBUTING.md` (архитектур хадгалах заавар, EN+MN),
+  `SECURITY.md` (эмзэг байдлыг хувийн сувгаар мэдээлэх), `CODE_OF_CONDUCT.md`,
+  PR болон issue template.
+- **CI Python matrix** — 3.9 / 3.11 / 3.12 дээр тест ажиллана (`requires-python >= 3.9`-ийг бодитоор батална).
+- **Golden corpus өргөтгөл** (`tests/test_golden_corpus.py`): AES-CBC (hex), gzip+CBC,
+  AES-GCM nonce-prefix дээр байт-тогтвортой/round-trip регресс. Нийт 132 тест.
+
+### Засагдсан
+- **Хувилбарын зөрүү**: `pyproject.toml` (0.1.0 → 0.6.1), `tatar_relay.__version__`,
+  `burp/build.gradle` (0.2.0 → 0.6.1) — гурван газрыг нэгтгэв. Development status Beta болгов.
+
+---
+
 ## [0.6.1] — Hardening: input caps, typed HMAC keys, fuzz tests
 
 ### Нэмэгдсэн зүйлс

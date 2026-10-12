@@ -10,7 +10,7 @@ from .errors import DecryptError, RelayError, ProfileError, ScopeViolation
 from .profile import Profile
 from .variables import VarStore
 
-__version__ = "0.1.0"
+__version__ = "0.6.1"
 
 __all__ = [
     "Context", "HttpMessage", "Engine", "ChannelPipeline",

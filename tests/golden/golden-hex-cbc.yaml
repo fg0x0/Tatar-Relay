@@ -1,0 +1,8 @@
+name: golden-hex-cbc
+scope: { hosts: [ "api.example.com" ] }
+request:
+  envelope: { locate: [ { in: raw } ] }
+  transform:
+    - hex_decode
+    - aes_decrypt: { mode: cbc, key: "${session_key}", iv: { source: value, value: "${iv}" } }
+    - as_json

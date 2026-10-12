@@ -1,0 +1,8 @@
+name: golden-gcm
+scope: { hosts: [ "api.example.com" ] }
+request:
+  envelope: { locate: [ { in: raw } ] }
+  transform:
+    - base64_decode
+    - aes_decrypt: { mode: gcm, key: "${session_key}", iv: { source: prefix, length: 12 } }
+    - as_json

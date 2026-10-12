@@ -9,6 +9,10 @@
 ## [Unreleased]
 
 ### Нэмэгдсэн зүйлс
+- **Golden corpus** (`tests/test_golden_corpus.py`): AES-CBC (hex), gzip+CBC,
+  AES-GCM nonce-prefix дээр байт-тогтвортой / round-trip регресс.
+- **Community-health файлууд**: `SECURITY.md` (эмзэг байдлыг хувийн сувгаар мэдээлэх),
+  `CODE_OF_CONDUCT.md`, PR болон issue template.
 - **Scope-ын шалгалт bridge ба CLI дээр.** Contract #5-д `host` / `path` гэсэн
   заавал биш талбар нэмэгдсэн. `host` ирвэл profile-ын fail-closed scope-ыг
   request тус бүрт шалгана (`Profile.authorize`) — урьд нь bridge нь host-ыг
@@ -36,7 +40,7 @@
 - **Doc-drift тестүүд** (`tests/test_docs_consistency.py`, `tests/test_cli_docs.py`,
   `tests/test_version.py`): тестийн тоо, README-ийн хоёр хэлнии бүлэгийн
   тэнцүү, холбоосын зөв байдал, user-guide-ын CLI тушаалууд болон хувилбарын
-  нэг эх сурвалжийг шалгана. Нийт: **233 тест**.
+  нэг эх сурвалжийг шалгана. Нийт: **241 тест**.
 
 <!-- TODO(mn): the four bullets below are English placeholders written by a
      non-Mongolian speaker. They need an idiomatic Mongolian translation before
